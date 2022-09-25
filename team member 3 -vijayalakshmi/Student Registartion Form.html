@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Number</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a class="logo" href="#">Student Registration Form</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#basic-details">Basic Details</a></li>
+                    <li><a href="#Course">Course</a></li>
+                    <li><a href="#contact-details">Contact Details</a></li>
+                    <li><a href="#table">Table</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </section>
+    <section>
+        <div class="form-container">
+            <form>
+                <h3 id="basic-details">Basic Details</h3>
+                <div class="form-group">
+                    <label for="fname">Name*</label>
+                    <input type="text" id="fname" class="fname" name="fname" placeholder="Please enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="Dob">Date of birth*</label>
+                    <input type="date" id="Dob" name="Dob" placeholder="Date of Birth" required>
+                </div>
+                <div class="form-group">
+                    <label for="Gender" id="Gender">Gender</label><br>
+                    <input type="radio" id="gender" name="gender"><label>Male</label>
+                    <input type="radio" id="gender" name="gender"><label>Female</label>
+                    <input type="radio" id="gender" name="gender"><label>Other</label>
+                </div>
+                <h3 id="Course">Course</h3>
+                <div class="form-group">
+                    <label for="ptype">Highest Qualification</label><br>
+                    <select name="course" id="course" placeholder="please select the Course" required>
+                        <option value="select">Select the Course</option>
+                        <option value="BE">B.E</option>
+                        <option value="BTech">B.Tech</option>
+                        <option value="ME">M.E</option>
+                        <option value="ME">M.Tech</option>
+                    </select>   
+                </div>
+                <div class="form-group">
+                    <label for="ptype">Branch</label><br>
+                    <select name="Branch" id="Branch" placeholder="please select the Branch" required>
+                        <option value="select">Select the Branch</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="CSE">CSE</option>
+                        <option value="MECH">MECH</option>
+                        <option value="IT">IT</option>
+                    </select>   
+                </div>
+                <div class="form-group">
+                    <label for="Instname">Name of the Institution*</label>
+                    <input type="text" id="Instname" class="Instname" name="Instname"
+                        placeholder="Please enter the name of the institute">
+                </div>
+                <h3 id="contact-details">Contact Details</h3>
+                <div class="form-group">
+                    <label for="mobno">Mobile Number*</label>
+                    <input type="text" id="mobno" class="mobno" name="mobno" placeholder="Mobile number">
+                </div>
+                <div class="form-group">
+                    <label for="addr">Residential Address</label>
+                    <input type="text" id="addr" class="addr" name="addr" placeholder="Current residential address">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID*</label>
+                    <input type="text" id="email" class="email" name="email" placeholder="Email ID">
+                </div>
+                <div class="form-group">
+                    <label for="pswd">Password*</label>
+                    <input type="password" id="pswd" class="pswd" name="pswd" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="textarea" name="description" rows="5" cols="33" placeholder="Describe yourself in few words"></textarea>
+                </div>
+                <br>
+                <input type="button" value="Submit">
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="container-table">
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date of birth</th>
+                        <th>Gender</th>
+                        <th>Highest Qualification</th>
+                        <th>Branch</th>
+                        <th>Name of the Institution</th>
+                        <th>Mobile Number</th>
+                        <th>Residential Address</th>
+                        <th>Email ID</th>
+                        <th>Password</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>
